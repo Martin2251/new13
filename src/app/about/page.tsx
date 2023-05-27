@@ -1,0 +1,4 @@
+// everything has to be called a page
+ export default function About () {
+    return(<div><h1>This is about page</h1></div>)
+ }
