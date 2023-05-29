@@ -13,7 +13,7 @@ const getUsersData = async () => {
 const getDogData= async () => {
     const res = await fetch("https://dog.ceo/api/breeds/image/random",{
     next:{
-        revalidate
+        revalidate: 3,
     }
     });
     return res.json();
