@@ -12,7 +12,9 @@ const getUsersData = async () => {
 // this one not static
 const getDogData= async () => {
     const res = await fetch("https://dog.ceo/api/breeds/image/random",{
-    cache:"no-store",
+    next:{
+        revalidate
+    }
     });
     return res.json();
 }
